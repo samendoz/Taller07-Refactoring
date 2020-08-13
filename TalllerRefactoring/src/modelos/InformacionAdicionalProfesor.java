@@ -5,7 +5,7 @@ public class InformacionAdicionalProfesor {
     private String facultad;
     private double BonoFijo;
     
-    public int getAñosdeTrabajo(){
+    public int getAnosdeTrabajo(){
         return añosdeTrabajo;
     }
     public String getFacultad){
@@ -14,7 +14,7 @@ public class InformacionAdicionalProfesor {
     public double getBonoFijo(){
         return  BonoFijo;
     } 
-    public void setAñosdeTrabajo(int año){
+    public void setAnosdeTrabajo(int año){
         añosdeTrabajo = año;
     } 
     public void setFacultad(String facult){
