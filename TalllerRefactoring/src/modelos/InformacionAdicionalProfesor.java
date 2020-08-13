@@ -8,14 +8,14 @@ public class InformacionAdicionalProfesor {
     public int getAnosdeTrabajo(){
         return añosdeTrabajo;
     }
-    public String getFacultad){
+    public String getFacultad(){
         return facultad;
     }  
     public double getBonoFijo(){
         return  BonoFijo;
     } 
-    public void setAnosdeTrabajo(int año){
-        añosdeTrabajo = año;
+    public void setAnosdeTrabajo(int anoT){
+        añosdeTrabajo = anoT;
     } 
     public void setFacultad(String facult){
         facultad = facult;
