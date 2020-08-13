@@ -5,12 +5,8 @@ import java.util.ArrayList;
 public class Estudiante{
     //Informacion del estudiante
     public String matricula;
-    public String nombre;
-    public String apellido;
     public String facultad;
-    public int edad;
-    public String direccion;
-    public String telefono;
+    public InformacionPersonal cedula;
     public ArrayList<Paralelo> paralelos;
     
     //Getter y setter de Matricula
@@ -78,31 +74,33 @@ public class Estudiante{
         this.telefono = telefono;
     }
     
+    public InformacionPersonal getCedula() {
+        return cedula;
+    }
+
+    public void setCedula(InformacionPersonal cedula) {
+        this.cedula = cedula;
+    }
     //Calcula y devuelve la nota inicial contando examen, deberes, lecciones y talleres. El teorico y el practico se calcula por parcial.
     public double CalcularNotaInicial(Paralelo p, double nexamen,double ndeberes, double nlecciones, double ntalleres){
-        double notaInicial=0;
-        for(Paralelo par:paralelos){
-            if(p.equals(par)){
-                double notaTeorico=(nexamen+ndeberes+nlecciones)*0.80;
-                double notaPractico=(ntalleres)*0.20;
-                notaInicial=notaTeorico+notaPractico;
-            }
-        }
-        return notaInicial;
+        return calcularNota(p,nexamen,ndeberes,nlecciones,ntalleres);
     }
     
     //Calcula y devuelve la nota final contando examen, deberes, lecciones y talleres. El teorico y el practico se calcula por parcial.
-    
     public double CalcularNotaFinal(Paralelo p, double nexamen,double ndeberes, double nlecciones, double ntalleres){
-        double notaFinal=0;
+        return calcularNota(p,nexamen,ndeberes,nlecciones,ntalleres);
+    }
+    
+    public double calcularNota(Paralelo p, double nexamen,double ndeberes, double nlecciones, double ntalleres){
+        double nota=0;
         for(Paralelo par:paralelos){
             if(p.equals(par)){
                 double notaTeorico=(nexamen+ndeberes+nlecciones)*0.80;
                 double notaPractico=(ntalleres)*0.20;
-                notaFinal=notaTeorico+notaPractico;
+                nota=notaTeorico+notaPractico;
             }
         }
-        return notaFinal;
+        return nota;
     }
     
     //Calcula y devuelve la nota inicial contando examen, deberes, lecciones y talleres. Esta nota es solo el promedio de las dos calificaciones anteriores.

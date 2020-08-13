@@ -4,11 +4,7 @@ import java.util.ArrayList;
 
 public class Profesor {
     public String codigo;
-    public String nombre;
-    public String apellido;
-    public int edad;
-    public String direccion;
-    public String telefono;
+    public InformacionPersonal cedula;
     public InformacionAdicionalProfesor info;
     public ArrayList<Paralelo> paralelos;
 
