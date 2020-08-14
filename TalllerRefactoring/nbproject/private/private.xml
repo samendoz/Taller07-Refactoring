@@ -3,10 +3,8 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/Users/HP/Documents/ESPOL/DISEÑO%20DE%20SOFTWARE/REPOSITORIOS/Taller07-Refactoring/TalllerRefactoring/src/modelos/Estudiante.java</file>
-            <file>file:/C:/Users/HP/Documents/ESPOL/DISEÑO%20DE%20SOFTWARE/REPOSITORIOS/Taller07-Refactoring/TalllerRefactoring/src/modelos/Ayudante.java</file>
-            <file>file:/C:/Users/HP/Documents/ESPOL/DISEÑO%20DE%20SOFTWARE/REPOSITORIOS/Taller07-Refactoring/TalllerRefactoring/src/modelos/calcularSueldoProfesor.java</file>
-            <file>file:/C:/Users/HP/Documents/ESPOL/DISEÑO%20DE%20SOFTWARE/REPOSITORIOS/Taller07-Refactoring/TalllerRefactoring/src/modelos/Materia.java</file>
+            <file>file:/C:/Users/edwar/OneDrive/Escritorio/REPO%20DISEÑO%20SOFTWARE/Taller07-Refactoring/TalllerRefactoring/src/modelos/Profesor.java</file>
+            <file>file:/C:/Users/edwar/OneDrive/Escritorio/REPO%20DISEÑO%20SOFTWARE/Taller07-Refactoring/TalllerRefactoring/src/modelos/InformacionAdicionalProfesor.java</file>
         </group>
     </open-files>
 </project-private>
