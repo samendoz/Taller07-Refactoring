@@ -4,17 +4,13 @@ import java.util.ArrayList;
 
 public class Profesor {
     public String codigo;
-    public InformacionPersonal cedula;
+    public InformacionPersonal informacionPer;
     public InformacionAdicionalProfesor info;
     public ArrayList<Paralelo> paralelos;
 
-    public Profesor(String codigo, String nombre, String apellido, String facultad, int edad, String direccion, String telefono) {
+    public Profesor(String codigo, InformacionPersonal informacionPer) {
         this.codigo = codigo;
-        this.nombre = nombre;
-        this.apellido = apellido;
-        this.edad = edad;
-        this.direccion = direccion;
-        this.telefono = telefono;
+        this.informacionPer = informacionPer;
         paralelos= new ArrayList<>();
     }
     
